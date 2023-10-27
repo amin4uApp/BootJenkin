@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Assam Computer Tech Institute</title>
+</head>
+<body>
+<div align="center">
+<form role="form" th:action="@{/signinPasswd}" th:method="post" th:object="${signin}">
+    <lable>Username</lable>
+    <input type="text" id="username" name="username">
+
+    <lable>Password</lable>
+    <input type="password" id="password" name="password">
+
+    <input type="submit">
+</form>
+</div>
+</body>
+</html>
