@@ -181,9 +181,9 @@ public ModelAndView saveStudent(@ModelAttribute("student") Student student, @Req
 	 */
 	int id=stdService.studentRegistration(st);
 	String str=String.valueOf(id);
-    String  UPLOADED_FOLDER="E://temp//";	
+   // String  UPLOADED_FOLDER="E://temp//";	
 	//Changed for Aws unix configuration
-	//String  UPLOADED_FOLDER="/usr/uploaded_files/";	
+	String  UPLOADED_FOLDER="/usr/uploaded_files/";	
 	String ackid=UPLOADED_FOLDER+str+'_';
 	byte[] bytes = file.getBytes();
    Path path = Paths.get(ackid + file.getOriginalFilename());
